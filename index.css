@@ -1,0 +1,55 @@
+body {
+  margin: 40px;
+}
+
+    .hello {
+      grid-area: hello;
+    }
+
+    .test {
+      grid-area: test;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+    .content {
+        grid-area: content;
+    }
+
+    .header {
+        grid-area: header;
+    }
+    .bottomleft {
+        grid-area: bottomleft;
+    }
+    .bottomright {
+        grid-area: bottomright;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(10,1fr);
+/*        grid-template-columns: 120px 120px  120px  120px;*/
+        grid-template-areas:
+               " sidebar hello header header test"
+               " sidebar ..... content content test"
+               " sidebar .....  bottomleft bottomright bottomright";
+        background-color: #fff;
+        color: #444;
+    }
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.header {
+  background-color: #999;
+}
+
+Resources
